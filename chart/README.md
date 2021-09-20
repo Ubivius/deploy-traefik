@@ -15,8 +15,8 @@ To install the chart with the release name `traefik`:
 
 ```console
 $ helm install traefik --version <version> traefik/traefik -f values.yaml
-$ helm apply -f dashboard.yaml
-$ helm apply -f middleware.yaml
+$ kubectl apply -f dashboard.yaml
+$ kubectl apply -f middleware.yaml
 ```
 
 ## Uninstalling the Chart
