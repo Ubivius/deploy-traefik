@@ -1,0 +1,19 @@
+ingressRoute:
+  dashboard:
+    enabled: false
+   
+#ports:
+#  web:
+#    redirectTo: websecure
+#  websecure:
+#    tls:
+#      enabled: true
+  
+resources: 
+  requests:
+    cpu: 100m
+    memory: 500Mi
+  limits:
+    cpu: 100m
+    memory: 500Mi
+
