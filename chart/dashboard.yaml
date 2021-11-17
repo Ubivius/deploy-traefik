@@ -6,9 +6,12 @@ metadata:
 spec:
   entryPoints:
     - web
+    - websecure
   routes:
     - match: Host(`traefik.admin.dev.ubivius.tk`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
       services:
         - name: api@internal
           kind: TraefikService
+  tls:
+    secretName: traefik.admin.dev.ubivius.tk

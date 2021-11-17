@@ -1,3 +1,14 @@
+ingressRoute:
+  dashboard:
+    enabled: false
+   
+#ports:
+#  web:
+#    redirectTo: websecure
+#  websecure:
+#    tls:
+#      enabled: true
+  
 resources: 
   requests:
     cpu: 10m
